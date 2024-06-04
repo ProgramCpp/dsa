@@ -1,0 +1,82 @@
+union find
+number of islands
+most stones removed with same row or column
+longest consecutive sequence
+last day where you can still cross
+regions cut by slashes
+accounts merge
+minimize malware spread
+evaluate division
+
+matrix
+set matrix zeros
+rotate image
+spiral matrix
+where will the ball fall
+
+merge Intervals
+merge Intervals
+insert Interval
+interval list intersections
+employee free time
+task scheduler
+meeting rooms 2
+
+modified binary search
+binary search
+search in rotated sorted array
+first bad version
+random pick with weight
+find k closet elements
+single element in a sorted array
+search in sorted array 2
+
+topological sort
+compilation order
+alien dictionary
+verifying an alien dictionary
+course schedule 2
+course schedule
+find all possible recipes from given supplies
+
+knowing what to track
+palindrome permutations
+valid anagram
+design tic tac toe
+group anagrams
+maximum frequency stack
+first unique character in a string
+find all anagrams in a  string
+longest palindrome by concatenating two-letter words
+ransom note
+
+bit manipulation
+find the difference
+complement of base 10 number
+flipping an image
+single number
+two single numbers
+encode and decode strings
+reverse bits
+
+k way merge
+merge sorted array
+kth smallest number in M sorted lists
+find kth pair with smallest sums
+merge k sorted lists
+kth smallest element in a sorted matrix
+
+subsets
+subsets
+permutations
+letter combinations of a phone number
+generate parantheses
+find k-sum subsets
+
+cyclic sort
+missing number
+first missing positive
+find the corrupt pair
+find the first k missing positive numbers
+
+

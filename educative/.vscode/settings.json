@@ -1,0 +1,12 @@
+{
+    "C_Cpp.files.exclude": {
+
+        "**/.vscode": true,
+        "**/.vs": true
+    },
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.default.customConfigurationVariables": {
+    
+    },
+    //"explorer.sortOrder": "modified",
+}

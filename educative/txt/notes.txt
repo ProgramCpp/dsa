@@ -1,0 +1,139 @@
+✅ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 𝐃𝐒𝐀 𝐭𝐨𝐩𝐢𝐜𝐬
+Array, Binary Search, Sliding Window, Matrix, Two Pointer, Intervals, Hash Map, String, DP, Trees, Graph, Stack, Queue, Heap
+https://www.piratekingdom.com/leetcode/cheat-sheet
+https://github.com/ombharatiya/FAANG-Coding-Interview-Questions/blob/main/TopLeetCodeProblems.md
+
+
+
+STL utils:
+<math>
+<algorithm>
+<sstream>
+<string>
+
+abs
+max
+stoi
+to_string
+std::string::npos
+getline (ss, item, 'delim')
+
+
+STL
+
+str.length
+str.compare
+str.substr(pos, count)
+str.find("delim", start) // returns npos if not found
+str.c_str
+stringstream ss(str)
+ss.eof
+ss.operator>>
+ss.operator<<
+ss.str
+map.begin
+map.end
+map.find
+map.contains
+vec.contr(size, default-value)
+vec.size
+vec.push_back
+vec.pop_back
+vec.insert
+v1.insert(v1.end(),v2.begin(),v2.end())
+vec.erase
+vec.front
+vec.back
+vec.operator[]
+vec.empty
+set.insert
+set.begin
+set.empty
+set.end
+set.erase
+set.size
+set.find
+que.push
+que.front
+que.back
+que.pop
+que.empty
+pQ.push
+pQ.top
+pQ.pop
+pQ.size
+pQ.begin X cannot iterate priority queue 
+pQ.end X 
+stk.push
+stk.top
+stk.pop
+stk.empty
+deque.front
+deque.back
+deque.push_front
+deque.push_back
+deque.pop_front
+deque.pop_back
+deque.size
+list.pop_back
+list.pop_front
+list.push_back
+list.push_front
+list.front
+list.back
+arr.constr X
+arr.fill
+arr.front
+arr.back
+arr.begin
+arr.end
+arr.operator[]
+
+
+
+
+
+DS:
+stack, queue, deque, map, vector, list, set, multiset, priority_queue(min/ max heap), trees, graphs
+
+algorithms:
+sorting, backtracking, dp, two pointers, fast n slow pointer, sliding window, BFS, DFS, greedy
+
+graph: 
+BFS, DFS, prims
+Union find/ disjoint set, djikstra, min spanning tree, topological sort.
+djisktra : from a single source, find shortest paths to all nodes
+bellman-ford : same as djisktra, but works for negative number and cheapest-flights-within-k-stops
+min spanning tree : connect all the Nodes with minimum costs (n nodes, will have n-1 edges)
+top sort : print the one with no incoming edges 
+union finds: 
+- The amortized time complexity becomes O(α(n)) which is a small constant. Here, α is the inverse Ackerman function- A function whose value grows extremely slowly and does not exceed 4 for any value of n.
+- the data is best organized in the form of a graph but it is not provided in adj list/ mat format
+- A graph has already been provided in the form of an adjacency list/matrix, and no new edges need to be added, so it would be more efficient to use either breadth-first or depth-first search
+- optimizations
+    - union by rank: reduces tree height. if one part is already longer, attaching it to the other increases its height by 1. increasing the height with shorter rank relatively results in smaller height
+    - path compression: reduces tree height
+
+permutations:
+backtracking + include and exclude
+
+lookup string in a groups of words
+trie/ hashing with hashmap/ hashing with BST:trie stores 26 alphabets for the max length of words O(L * 26) - not a funtion of n. lookup in O(L)
+match string with a group of words partly:
+trie
+print words alphabetically:
+trie
+The main disadvantage of tries is that they need a lot of memory for storing the strings. For each node we have too many node pointers - but optimize on stroing prefixes only once
+
+tree:
+given h- height, num of nodes(perfectly balanced binary tree) = 2^h-1(only root level has 1 node)
+given n nodes at a level, nodes at n+1 level = 2*n
+
+
+
+top k elements: min/ max heap
+forward order: queue
+reverse order: stack
+random lookup: hashtable, array
+linear access: vector, array, list
+sorted access: tree

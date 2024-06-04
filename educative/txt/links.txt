@@ -1,0 +1,8 @@
+https://leetcode.com/problems/minimum-window-substring/solutions/26808/Here-is-a-10-line-template-that-can-solve-most-'substring'-problems/
+
+https://leetcode.com/discuss/general-discussion/665604/important-and-useful-links-from-all-over-the-leetcode
+
+https://leetcode.com/discuss/general-discussion/669996/greedy-for-beginners-problems-sample-solutions
+
+https://leetcode.com/discuss/study-guide/458695/Dynamic-Programming-Patterns
+

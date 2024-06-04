@@ -1,0 +1,7 @@
+two - pointer
+DP: n = F(n-1, n-2)
+DP: include - exclude, also F(n-1, n-2)
+DP: n = F(n-1, n-2,...1) or combinatorial => O(n^n) =>with DP O(n^2)
+greedy: local best solution => optimal solution
+
+
