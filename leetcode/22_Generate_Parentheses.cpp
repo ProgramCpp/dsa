@@ -14,7 +14,8 @@ string length  = 2 * n
     If right < left then we can add ')' to the current string
 
 at a given index, there can be only either '(' or ')'
-
+note, at a given index, you can add '(' or ')'. add both in 2 iterations to get all combinations if the constraints are met.
+   '(' if not all n parenthesis are used. ')' if there are enough matching '(' parenthesis
 */
 
 class Solution {
@@ -28,6 +29,9 @@ public:
         if(left < n ){
             generate(n, left + 1, right, paren + '(', result);
         }
+
+        // note, no return above. ')' is added irrespective of '(' was added. 
+        // try adding both parenthesis to get all combinations
 
         // left is less than n. hence right is less than n
         if(right < left){

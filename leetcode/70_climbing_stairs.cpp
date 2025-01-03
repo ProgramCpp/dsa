@@ -6,6 +6,7 @@ no of ways to reach 1 step.
 no of ways to reach 2 steps.
 total ways = no of ways to reach n-1th step + no of ways to reach n-2th step
 use dp to avoid recalculation
+do bottom up calculation, to optimize space complexity. the problem always progresses from first step towards nth step
 */
 
 class Solution {

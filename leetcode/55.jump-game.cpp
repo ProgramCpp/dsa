@@ -44,3 +44,9 @@ int main()
     vector<int> inp = {2, 3, 1, 1, 4};
     s.canJump(inp);
 }
+
+
+/*
+start from i = 0. keep track of max index that can be reached from i. update the max index whenever new index can be jumped to.
+return true once last index reached.
+*/

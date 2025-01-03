@@ -1,18 +1,25 @@
-// 621. Task Scheduler   ################ INCOMPLETE
+// 621. Task Scheduler   ################ INCOMPLETE ##################################
 // hint: task order does not matter.
 
 /*
 my algo:
 count tasks
 use max heap to sort tasks by frequency
-at every cycle, pick task with highest frequency if the cycle is past the cooling period
-maintain cooling tasks in another max heap
+at every cycle, pick task with highest frequency
+maintain cooling tasks in another queue. when the task is ready, move it back to max heap
+
+
+HINT: the cooling period for all tasks are same. the first scheduled task will cool down first. dont need to see all pending tasks
+store cooling tasks in a queue. tasks can be pushed back into pq after the cooling period.
 
 OR
-during the cooling period, add other tasks from the priority queue
 
-
+Hint: only optimal number of slots reqd. not the order of tasks
 Hint: can you count idles? answer = tasks + idles
+
+https://leetcode.com/problems/task-scheduler/solutions/3280549/full-explanation-using-priority-queue-and-formula-based-approach
+https://leetcode.com/problems/task-scheduler/solutions/104500/java-o-n-time-o-1-space-1-pass-no-sorting-solution-with-detailed-explanation
+
 */
 
 struct Task {

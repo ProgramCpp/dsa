@@ -9,7 +9,7 @@ for every length of sub array, compute the sum. keep track of sum so far, starti
 
 TLE on TC 204
 
-keep adding 1 number at a time. keep track of max num : kadanes algorithm
+keep adding 1 number at a time. keep track of max num. once sum is negative, reset sum : kadanes algorithm
 
 => n
 
@@ -29,7 +29,7 @@ public:
 
         int sum = 0;
         for(int i = 0; i < nums.size(); i++){
-            sum = maxNum(nums[i], sum + nums[i]); // if a number makes sum 0. start with that num instead of 0
+            sum = maxNum(nums[i], sum + nums[i]); // if a number makes sum 0. start with that num if +ve instead of 0
             if(sum > max)
                 max = sum;
         }

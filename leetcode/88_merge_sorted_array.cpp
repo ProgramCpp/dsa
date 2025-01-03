@@ -1,6 +1,15 @@
 // 88. Merge Sorted Array//https://leetcode.com/problems/merge-sorted-array/description/// in place merge. start merging from back where there is empty space
 
-/*1. copy nums2 into nums1 and then sort2. copy nums1 out and the merge them into one nums1 array3. in-place: move from the right*/
+/*
+1. copy nums2 into nums1 and then sort
+2. copy nums1 out and the merge them into one nums1 array3. 
+in-place: move from the right. HINT: the right of nums1 is unused. start filling the empty space from right.
+in-place: point to both arrays. swap the indices if moving element from the second- doesnt work
+ex:
+1 5 4
+2 3
+
+*/
 class Solution
 {
 public:

@@ -48,7 +48,7 @@ public:
         if ( n == 3) 
             return 3;
 
-        for(int i = 2; i < n; i++){
+        for(int i = 2; i < n; i++){ // why loop? why not just max(2 * break(n-2), 3 * break(n-3))
             int val = integerBreakAndStore(i, store) * integerBreakAndStore(n - i, store);
             if(max < val)
                 max = val;

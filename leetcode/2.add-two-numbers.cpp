@@ -15,6 +15,7 @@ using namespace std;
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 }; */
 
+ // this isnt working!!!
 class Solution
 {
 public:
@@ -26,6 +27,7 @@ public:
         while (l1 != nullptr || l2 != nullptr)
         {
             int r = 0;
+            // note: always check pointer for null
             if (l1 != nullptr)
                 r += l1->val;
 
@@ -35,6 +37,8 @@ public:
             r = r + l3->val;
             l3->val = r % 10;
 
+            // how is this even working? the list has digits in reverse order.  
+            // the new node's next must point to the existing node
             if (r > 9)
                 l3->next = new ListNode(1);
             else (l1->next != nullptr || l2->next != nullptr)
