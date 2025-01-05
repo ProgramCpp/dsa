@@ -9,7 +9,7 @@ at every cycle, pick task with highest frequency
 maintain cooling tasks in another queue. when the task is ready, move it back to max heap
 
 
-HINT: the cooling period for all tasks are same. the first scheduled task will cool down first. dont need to see all pending tasks
+HINT: the cooling period for all tasks are same. the first scheduled task will cool down first. no need to see all pending tasks
 store cooling tasks in a queue. tasks can be pushed back into pq after the cooling period.
 
 OR

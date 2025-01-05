@@ -9,6 +9,9 @@ ASCII
 65 to 90: A to Z
 97 to 122: a to z
 
+syntax:
+for (auto x : v)
+
 
 STL utils:
 <math>
@@ -22,9 +25,19 @@ stoi
 to_string
 std::string::npos
 getline (ss, item, 'delim')
+std::advance(iter, index)
+std::next(pSomeMap.begin(),1)
 
 
 STL
+Input iterators: Only support == and !=.
+Forward iterators: Support ==, !=, and <.
+Bidirectional iterators: Support ==, !=, <, >, <=, and >=.
+Random access iterators: Support all comparison operators.
+
+Bidirectional iterators: Support ++, --
+Random access iterators: ++, --, +n, -n
+
 
 str.length
 str.compare
@@ -36,6 +49,7 @@ ss.eof
 ss.operator>>
 ss.operator<<
 ss.str
+std::map<T>::iterator is of the iterator-class bidirectional iterator. Those only have ++ and -- operators. +N and [] is only available for random access iterators (which can be found in e.g. std::vector<T>).
 map.begin
 map.end
 map.find
@@ -63,6 +77,8 @@ que.front
 que.back
 que.pop
 que.empty
+pQ: max heap: priority_queue<int>
+pQ: min heap: priority_queue<int, std::vector<int>, std::greater<int>>
 pQ.push
 pQ.top
 pQ.pop
