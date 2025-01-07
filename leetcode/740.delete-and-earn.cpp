@@ -22,7 +22,7 @@ If you take a number, you might as well take them all. Keep track of what the va
 
 // writing the iterative code - feeling a bit adventurous. solution is TLE but passes 23 Tc's. 
 // can use dp instead. max points = maxn. where maxi = max(vi + vi-2, vi-1)
-// note, at any i, you only need maxi-1 and maxi-2. dont need to keep max at every i. further reducing the space complexity from O(n) to O(1)
+// note, at any i, you only need maxi-1 and maxi-2. dont need to store max at every i. further reducing the space complexity from O(n) to O(1)
 class Solution {
 public:
 
@@ -40,7 +40,7 @@ public:
         }
 
         // handling first two places so that all n-2 indices falls within the range
-        if (i == ++nums.begin()) {
+        if (i == ++nums.begin()) { // only ++ and -- operators are supported
             if (isPrevLessThan(i)) { // if consecutive, pick the max of the two elements. else, take both
                 cout << i -> first << ":" << max(i-> second, nums.begin()-> second)<< "i = 1" << endl;
                 return max(i-> second, nums.begin()-> second);
@@ -61,6 +61,7 @@ public:
             cout << i -> first << ": " << s << endl;
             return max(Points(nums, i_1), Points(nums, i_2) + i -> second);
         } else {
+            // add all points of prev number since they are not consecutive
             int max = Points(nums, i_1) + i -> second;
             // if (isPrevLessThan(i_1)) {
             //     max += 
