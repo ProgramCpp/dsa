@@ -12,7 +12,7 @@ the smaller right line index keep moving left. finally, the max volume = 10 * 4 
 say, there is some tall line is in the middle. the tall middle line, when multipled by the bigger number gives the maximum volume.
 => move the smaller line
 
-even if the second line is bigger, the smaller line will make the volume smaller, so no point holding onto the bigger line
+even if the second line is bigger, the smaller line will make the volume smaller, so no point holding onto the smaller line
 remember, you are taking the product at every step. 
 */
 

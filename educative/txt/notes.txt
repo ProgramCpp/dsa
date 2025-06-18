@@ -18,6 +18,11 @@ STL utils:
 <algorithm>
 <sstream>
 <string>
+<deque>
+<queue> // priority_queue too
+<stack>
+<vector>
+<map>
 
 abs
 max
@@ -38,11 +43,12 @@ Random access iterators: Support all comparison operators.
 Bidirectional iterators: Support ++, --
 Random access iterators: ++, --, +n, -n
 
-
+x = int(c)
+x = c - '0' => c > 0 && c < 9
 str.length
 str.compare
 str.substr(pos, count)
-str.find("delim", start) // returns npos if not found
+str.find("delim", start) // returns string::npos if not found
 str.c_str
 stringstream ss(str)
 ss.eof
@@ -54,7 +60,7 @@ map.begin
 map.end
 map.find
 map.contains
-vec.contr(size, default-value)
+vec(size, default-value)
 vec.size
 vec.push_back
 vec.pop_back
@@ -83,6 +89,7 @@ pQ.push
 pQ.top
 pQ.pop
 pQ.size
+pQ.empty
 pQ.begin X cannot iterate priority queue 
 pQ.end X 
 stk.push

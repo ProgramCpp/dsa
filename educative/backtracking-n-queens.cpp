@@ -52,6 +52,6 @@ int placeQueens(vector<vector<bool>> &board, int x, int n) {
 }
 
 int SolveNQueens(int n) {
-    vector<vector<bool>> board(n, vector<bool>(n, false));
+    vector<vector<bool>> board(n, vector<bool>(n, false)); // initializing a 2d vector
     return placeQueens(board, 0, n);
 } 

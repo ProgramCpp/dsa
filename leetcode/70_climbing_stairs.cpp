@@ -31,7 +31,7 @@ public:
     }
 
     int climbStairs(int n) {
-        vector<int> stairs(n, -1);
+        vector<int> stairs(n, -1); // dont need. to comput nth value, you only need n-1th and n-2th values. just store them, not whole history of computation
         return climbStairsWithPrecomputaiton(n, stairs);
     }
 };
