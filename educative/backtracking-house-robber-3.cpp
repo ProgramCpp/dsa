@@ -3,7 +3,8 @@
 /*
 level order of tree. either include parent or exclude parent.
 max(parent included, children included)
-both right and left child may be included or not. pick max. no need to pick/ exclude both
+both right and left child may be included or not. pick max. no need to pick/ exclude both. why?
+because, excluding the immediate left might lead to an optimal solution down the line. similarly for right node. you are adding both the optimaal solutions of left sub tree and right subtree
 can cache results for a given node
 */ 
 

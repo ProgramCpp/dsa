@@ -23,11 +23,20 @@ STL utils:
 <stack>
 <vector>
 <map>
+<set>
+<list>
+<forward_list>
+<array>
+<unordered_map>
+<unordered_set>
+
 
 abs
 max
 stoi
 to_string
+find(begin, end, entry)
+sort(begin, end, [comparator])
 std::string::npos
 getline (ss, item, 'delim')
 std::advance(iter, index)
@@ -42,14 +51,22 @@ Random access iterators: Support all comparison operators.
 
 Bidirectional iterators: Support ++, --
 Random access iterators: ++, --, +n, -n
+[indexing], front and back are available only in sequential containers
 
 x = int(c)
 x = c - '0' => c > 0 && c < 9
+str1 != str2 OR str1 == str2
+str{'A'}/ string(1, 'A')
+str.starts_with(prefix) or str1.find(str2) == 0//  c++20
+str.ends_with(suffix) // c++20
 str.length
+str.size
 str.compare
 str.substr(pos, count)
+str1.append(str2)
 str.find("delim", start) // returns string::npos if not found
 str.c_str
+std::reverse(str.begin, str.end)
 stringstream ss(str)
 ss.eof
 ss.operator>>
@@ -59,7 +76,9 @@ std::map<T>::iterator is of the iterator-class bidirectional iterator. Those onl
 map.begin
 map.end
 map.find
+map[] // default val - 0, false - default constr val created if key not found
 map.contains
+map.at // exception if not found
 vec(size, default-value)
 vec.size
 vec.push_back
@@ -127,14 +146,24 @@ stack, queue, deque, map, vector, list, set, multiset, priority_queue(min/ max h
 algorithms:
 sorting, backtracking, dp, two pointers, fast n slow pointer, sliding window, BFS, DFS, greedy
 
-graph: 
-BFS, DFS, prims
-Union find/ disjoint set, djikstra, min spanning tree, topological sort.
-djisktra : from a single source, find shortest paths to all nodes
-bellman-ford : same as djisktra, but works for negative number and cheapest-flights-within-k-stops
-min spanning tree : connect all the Nodes with minimum costs (n nodes, will have n-1 edges)
-top sort : print the one with no incoming edges 
-union finds: 
+graph: dependencies, optionally with weights, possibly disjoint. traversal, sequential traversal, optimization or optimal paths
+BFS, DFS, DFS with backtracking, dijkstras, bellman ford, floyd warshal, prims, kruskals, kahns, Union find/ disjoint set, min spanning tree, topological sort.
+hint: min/max heap can be used to pick thhe optimal value. O(n ^ 2) => O(n log n) // heap operations are log n
+memoization: when finding optimal solution, memoize solution to sub paths. exact path isnt a concern, only the optimal solution to the sub paths. X = min(Xnew, Xold)
+seen structure: to detect cycles (nodes - map<int, bool> / edges - map<int, map<int, bool>>). visited to avoid duplicate computation. 
+SSSP: in topologial sort order, find shortest path to all neighboring nodes, by processing all outgoing edges of the current node
+BFS: shortest path from src. bfs iteratively, dfs recursively, for convenience
+dijkstras : from a single source, find shortest paths to all nodes
+// for graphs, first iteration gives optimal solution to reach the immed    iate node closer to the source. the 2nd iteration the optimal solution for nodes connected to immediate nodes.
+// after E iterations, the optimal solution for the farthest node from source is computed
+bellman-ford : same as djisktra, but works for negative edges and not for cycles with negative edges, can detect them though. in n iterations, find a shorter path from source to all other nodes by traversing from thhe source to all other nodes. after n iterations, all the nodes's shortest distance is computed
+floyd warshal: all pair shortest path. in n (no of nodes) interations, find shorter path between every pair of node, by picking one other intermediate node at a time
+min cost spanning tree : connect all the Nodes with minimum costs (n nodes will have n-1 edges)
+prims: pick least weighted edge from visited sub set to unvisited subset
+kruskals: pick the least of all weighted edges if it doesnt form a cycle(ends of thhe edge are both already included)
+topological sort/ post order DFS for aacuclic graph: DFS and print the one with no outgoing edge first. process current node after all its children
+kahns: compute indegrees of all nodes. traverse nodes from lowest indegree (0 - no cycles). at each step, pick the neighbor with lowest indegree.
+union find: 
 - The amortized time complexity becomes O(α(n)) which is a small constant. Here, α is the inverse Ackerman function- A function whose value grows extremely slowly and does not exceed 4 for any value of n.
 - the data is best organized in the form of a graph but it is not provided in adj list/ mat format
 - A graph has already been provided in the form of an adjacency list/matrix, and no new edges need to be added, so it would be more efficient to use either breadth-first or depth-first search
@@ -161,6 +190,13 @@ segment trees:
 build by fixing middle elemnt in root. divide input size by 2. build left and right tree.
 left child =  2 * root + 1 // 2 times because, if there are root nodes, all its children (2 - complete binary tree) comes before its own children
 right child = 2 * root + 2
+
+heap: children 2*i and 2*i+1
+
+DP
+memoization: recursive calls to solve sub problem and memoize. base case to build solutions. use the memoized solutions.
+backtracking 
+pruning: ignore finding solutions to sub problems that does not produce more optimal solution thana already computed
 
 top k elements: min/ max heap
 forward order: queue
