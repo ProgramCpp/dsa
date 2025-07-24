@@ -11,7 +11,7 @@ left --[grid]-- right
 /*
 brute force: use DFS from any top cell to reach botton cell. repeat after flooding each day
 binary search: use binary search to find the day when the top cells are not reachable to botton cells. use DFS
-Union Find: connect all adjacent flodded cells. when left most and right most are a single component, return the day
+Union Find: connect all adjacent flooded cells. when left most and right most are a single component, return the day
 time complexity: 
 O(num of cells * m * n)
 =>

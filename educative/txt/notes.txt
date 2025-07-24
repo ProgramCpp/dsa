@@ -79,11 +79,13 @@ map.find
 map[] // default val - 0, false - default constr val created if key not found
 map.contains
 map.at // exception if not found
+vec{val1, val2}
+vec = {val1, val2}
 vec(size, default-value)
 vec.size
 vec.push_back
 vec.pop_back
-vec.insert
+vec.insert(it [+ index], val) // insert before index
 v1.insert(v1.end(),v2.begin(),v2.end())
 vec.erase
 vec.front
@@ -163,7 +165,7 @@ prims: pick least weighted edge from visited sub set to unvisited subset
 kruskals: pick the least of all weighted edges if it doesnt form a cycle(ends of thhe edge are both already included)
 topological sort/ post order DFS for aacuclic graph: DFS and print the one with no outgoing edge first. process current node after all its children
 kahns: compute indegrees of all nodes. traverse nodes from lowest indegree (0 - no cycles). at each step, pick the neighbor with lowest indegree.
-union find: 
+union find(connected components): 
 - The amortized time complexity becomes O(α(n)) which is a small constant. Here, α is the inverse Ackerman function- A function whose value grows extremely slowly and does not exceed 4 for any value of n.
 - the data is best organized in the form of a graph but it is not provided in adj list/ mat format
 - A graph has already been provided in the form of an adjacency list/matrix, and no new edges need to be added, so it would be more efficient to use either breadth-first or depth-first search

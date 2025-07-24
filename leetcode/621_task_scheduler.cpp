@@ -34,6 +34,7 @@ struct Task {
     }
 };
 
+// 25/72
 class Solution {
 public:
     int leastInterval(vector<char>& tasks, int n) {
