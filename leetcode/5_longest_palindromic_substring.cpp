@@ -8,6 +8,7 @@ O(n ^2): find combinations of substrings => n^2. check if palidrome in O(1) by c
 
 solution:
 all single characters are palindrome
+all 2 characters are palindromes if the chars match
 iterate over all characters, move in either directions until the substring is a palindrome.
 
 */

@@ -192,8 +192,14 @@ segment trees:
 build by fixing middle elemnt in root. divide input size by 2. build left and right tree.
 left child =  2 * root + 1 // 2 times because, if there are root nodes, all its children (2 - complete binary tree) comes before its own children
 right child = 2 * root + 2
-
-heap: children 2*i and 2*i+1
+ex: [4,0,null,null,0,null,0]
+      4
+     / \
+    0   (null)
+   / \
+ (null) 0
+       / \
+      (null) 0
 
 DP
 memoization: recursive calls to solve sub problem and memoize. base case to build solutions. use the memoized solutions.
