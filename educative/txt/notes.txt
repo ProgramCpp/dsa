@@ -55,6 +55,7 @@ Random access iterators: ++, --, +n, -n
 
 x = int(c)
 x = c - '0' => c > 0 && c < 9
+c > '0' && c < '9'
 str1 != str2 OR str1 == str2
 str{'A'}/ string(1, 'A')
 str.starts_with(prefix) or str1.find(str2) == 0//  c++20
@@ -62,7 +63,7 @@ str.ends_with(suffix) // c++20
 str.length
 str.size
 str.compare
-str.substr(pos, count)
+str.substr(pos, count) // no count to get until end of str
 str1.append(str2)
 str.find("delim", start) // returns string::npos if not found
 str.c_str

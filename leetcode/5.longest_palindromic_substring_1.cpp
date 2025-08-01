@@ -20,7 +20,9 @@ b      1 0
 a        1 0
 d          1
 note: only upper half of the matrix is filled. the reverse is not valid
-another suggested soln: reverse aand find common substring with index checks
+note: i + 1 index, the matrix filling from centre ensures this not going out of bounds. check withh examples
+think about it, for any sub string length k, we always have checked all sub strings of length k - 1
+another suggested soln: reverse and find common substring with index checks
 
 */
 
