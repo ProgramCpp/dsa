@@ -28,7 +28,7 @@ public:
     }
 
     int combinationSum4(vector<int>& nums, int target) {
-        vector<int> noofways(target + 1, -1);
+        vector<int> noofways(target + 1, -1); // -1. cache 0 ways to compute as well
         return cs(nums, target, noofways);
     }
 };

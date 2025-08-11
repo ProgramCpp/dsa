@@ -35,6 +35,8 @@ abs
 max 
 max({a, b, c}) // 3 or more values
 max_element(vec.begin(), vec.end()), returns it to max ele
+pow(b, e) // ^ is XOR
+sqrt(n)// there is no isSquare. sqrt(n) * sqrt(n) == n
 stoi
 to_string
 find(begin, end, entry)
