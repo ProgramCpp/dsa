@@ -12,7 +12,7 @@ all you have to do is find if any combination of nums produce the sum, meaning t
 thus, when i = 0, and sum, solve for i =1, sum = sum0 - nums[0] || sum
 cache result from index to sum
 => O(N * S), N, numsl S, sum. max sum = 100 * 200/ 2 = 10000. n * s = 2000000  // for every new sum, you solve for that index again
-space complexity can be futher reduced. there is no need to cache results. terminate as soon as theres a succesful match and short circuit - doesnt work because at every index, the algorithm branches, when returning back the call stack, some of the calculations are redone in other branches, especially when the branch doesnt produce the result.
+space complexity can be futher reduced. there is no need to cache results. terminate as soon as theres a succesful match and short circuit - doesnt work because at every index, the algorithm branches, when returning back the call stack, some of the calculations are redone in other branches, especially when the branch doesnt produce the result (0 cached result).
 */
 
 class Solution {
