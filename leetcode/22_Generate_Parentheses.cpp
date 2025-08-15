@@ -1,7 +1,9 @@
 // 22. Generate Parentheses
 
 /*
-start with one paranthesis and keep adding more paranthesis in different order. - no need for dp. you are not calling the same funtion resursively multiple times
+start with one paranthesis and keep adding more paranthesis in different order. at any index, you can add an opening paren or closing paren if there was an opening paren.
+keep count of number of open paren left to decide to add a closing paren
+no need for dp. you are not calling the same funtion resursively multiple times
 
 n = 4; "(())(())" is missing - ( s ): s can be incomplete and can be made complete with the last pair of parenthesis
 

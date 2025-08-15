@@ -33,6 +33,7 @@ STL utils:
 
 abs
 max 
+max(1, b, c)
 max({a, b, c}) // 3 or more values
 max_element(vec.begin(), vec.end()), returns it to max ele
 pow(b, e) // ^ is XOR
@@ -152,6 +153,8 @@ stack, queue, deque, map, vector, list, set, multiset, priority_queue(min/ max h
 
 algorithms:
 sorting, backtracking, dp, two pointers, fast n slow pointer, sliding window, BFS, DFS, greedy
+
+DP: 1. OOB check 2. base case 3. cache check 4. computation 5. cache and return
 
 graph: dependencies, optionally with weights, possibly disjoint. traversal, sequential traversal, optimization or optimal paths
 BFS, DFS, DFS with backtracking, dijkstras, bellman ford, floyd warshal, prims, kruskals, kahns, Union find/ disjoint set, min spanning tree, topological sort.
