@@ -12,7 +12,7 @@ int lcs(const std::string& str1, const std::string& str2, int i, int j, vector<v
         lcss[i][j]= max(lcs(str1, str2, i, j+1, lcss), lcs(str1, str2, i + 1, j, lcss));
     }
     return lcss[i][j];
-}
+}   
 
 int LongestCommonSubsequence(const std::string& str1, const std::string& str2) {
     vector<vector<int>> lcss(str1.length(), vector<int>(str2.length(), -1));
